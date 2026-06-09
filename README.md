@@ -81,13 +81,13 @@ restful-booker/
 │   ├── admin/
 │   │   ├── adminLoginTests.spec.js
 │   │   └── adminRoomTests.spec.js
+│   │   └── adminMessageTests.spec.js
+│   │   └── adminReportTests.spec.js
 │   ├── booking/
 │   │   ├── manageBookingTests.spec.js
 │   │   └── reservationFormValidationTests.spec.js
 │   ├── contact/
 │   │   └── contactFormValidationTests.spec.js
-│   ├── crossRole/
-│   │   └── crossRoleTests.spec.js
 │   └── mockingTests/
 │       ├── roomsMockingTests.spec.js
 │       ├── brandingMockingTests.spec.js
