@@ -1,0 +1,16 @@
+{
+  "roomName": "401",
+  "type": "Family",
+  "accessible": true,
+  "image": "https://www.mwtestconsultancy.co.uk/img/room1.jpg",
+  "description": "A cozy Family room",
+  "features": [
+       "WiFi",
+        "TV",
+        "Radio",
+        "Refreshments",
+        "Safe",
+        "Views"
+    ],
+  "roomPrice": 500
+}

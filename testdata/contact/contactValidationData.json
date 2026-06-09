@@ -1,0 +1,110 @@
+[
+    {
+        "scenario": "verify error on blank name submission",
+        "name": "",
+        "email": "nikhil@email.com",
+        "phone": "12345687890120",
+        "subject": "Regarding Room Availability",
+        "message": "I wanted to inquire whether suite room is available for July 10,2026.",
+        "errors": ["Name may not be blank"]
+    },
+    {
+        "scenario": "verify error on blank email submission",
+        "name": "Nikhil",
+        "email": "",
+        "phone": "12345687890120",
+        "subject": "Regarding Room Availability",
+        "message": "I wanted to inquire whether suite room is available for July 10,2026.",
+        "errors": ["Email may not be blank"]
+    },
+    {
+        "scenario": "verify error on invalid email format",
+        "name": "Nikhil",
+        "email": "notanemail",
+        "phone": "12345687890120",
+        "subject": "Regarding Room Availability",
+        "message": "I wanted to inquire whether suite room is available for July 10,2026.",
+        "errors": ["must be a well-formed email address"]
+    },
+    {
+        "scenario": "verify error on blank phone submission",
+        "name": "Nikhil",
+        "email": "nikhil@email.com",
+        "phone": "",
+        "subject": "Regarding Room Availability",
+        "message": "I wanted to inquire whether suite room is available for July 10,2026.",
+        "errors": ["Phone may not be blank", "Phone must be between 11 and 21 characters."]
+    },
+    {
+        "scenario": "verify error on phone below minimum length",
+        "name": "Nikhil",
+        "email": "nikhil@email.com",
+        "phone": "1234567890",
+        "subject": "Regarding Room Availability",
+        "message": "I wanted to inquire whether suite room is available for July 10,2026.",
+        "errors": ["Phone must be between 11 and 21 characters."]
+    },
+    {
+        "scenario": "verify error on phone exceeding maximum length",
+        "name": "Nikhil",
+        "email": "nikhil@email.com",
+        "phone": "1234567890123456789012",
+        "subject": "Regarding Room Availability",
+        "message": "I wanted to inquire whether suite room is available for July 10,2026.",
+        "errors": ["Phone must be between 11 and 21 characters."]
+    },
+    {
+        "scenario": "verify error on blank subject submission",
+        "name": "Nikhil",
+        "email": "nikhil@email.com",
+        "phone": "12345687890120",
+        "subject": "",
+        "message": "I wanted to inquire whether suite room is available for July 10,2026.",
+        "errors": ["Subject may not be blank", "Subject must be between 5 and 100 characters."]
+    },
+    {
+        "scenario": "verify error on subject below minimum length",
+        "name": "Nikhil",
+        "email": "nikhil@email.com",
+        "phone": "12345687890120",
+        "subject": "Hi",
+        "message": "I wanted to inquire whether suite room is available for July 10,2026.",
+        "errors": ["Subject must be between 5 and 100 characters."]
+    },
+    {
+        "scenario": "verify error on subject exceeding maximum length",
+        "name": "Nikhil",
+        "email": "nikhil@email.com",
+        "phone": "12345687890120",
+        "subject": "This is a very long subject line that exceeds the maximum allowed length of one hundred characters for this field",
+        "message": "I wanted to inquire whether suite room is available for July 10,2026.",
+        "errors": ["Subject must be between 5 and 100 characters."]
+    },
+    {
+        "scenario": "verify error on blank message submission",
+        "name": "Nikhil",
+        "email": "nikhil@email.com",
+        "phone": "12345687890120",
+        "subject": "Regarding Room Availability",
+        "message": "",
+        "errors": ["Message may not be blank", "Message must be between 20 and 2000 characters."]
+    },
+    {
+        "scenario": "verify error on message below minimum length",
+        "name": "Nikhil",
+        "email": "nikhil@email.com",
+        "phone": "12345687890120",
+        "subject": "Regarding Room Availability",
+        "message": "Too short",
+        "errors": ["Message must be between 20 and 2000 characters."]
+    },
+    {
+        "scenario": "verify error on message exceeding maximum length",
+        "name": "Nikhil",
+        "email": "nikhil@email.com",
+        "phone": "12345687890120",
+        "subject": "Regarding Room Availability",
+        "message": "This is a very long message that exceeds the maximum allowed length of two thousand characters. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. This message is now well over two thousand characters long and should trigger the validation error.",
+        "errors": ["Message must be between 20 and 2000 characters."]
+    }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "scenario": "verify error on blank firstname submission",
+        "firstname": "",
+        "lastname": "Ranjan",
+        "email": "Nikhil.Ranjan@email.com",
+        "phone": "123456789012",
+        "errors": ["Firstname should not be blank", "size must be between 3 and 18"]
+    },
+    {
+        "scenario": "verify error on firstname below minimum length",
+        "firstname": "Ni",
+        "lastname": "Ranjan",
+        "email": "Nikhil.Ranjan@email.com",
+        "phone": "123456789012",
+        "errors": ["size must be between 3 and 18"]
+    },
+    {
+        "scenario": "verify error on firstname exceeding maximum length",
+        "firstname": "Nikolasantiago123456",
+        "lastname": "Ranjan",
+        "email": "Nikhil.Ranjan@email.com",
+        "phone": "123456789012",
+        "errors": ["size must be between 3 and 18"]
+    },
+    {
+        "scenario": "verify error on blank lastname submission",
+        "firstname": "Nikhil",
+        "lastname": "",
+        "email": "Nikhil.Ranjan@email.com",
+        "phone": "123456789012",
+        "errors": ["Lastname should not be blank", "size must be between 3 and 30"]
+    },
+    {
+        "scenario": "verify error on lastname below minimum length",
+        "firstname": "Nikhil",
+        "lastname": "Ra",
+        "email": "Nikhil.Ranjan@email.com",
+        "phone": "123456789012",
+        "errors": ["size must be between 3 and 30"]
+    },
+    {
+        "scenario": "verify error on lastname exceeding maximum length",
+        "firstname": "Nikhil",
+        "lastname": "Ranjanmaheshwarisinghpatil123456",
+        "email": "Nikhil.Ranjan@email.com",
+        "phone": "123456789012",
+        "errors": ["size must be between 3 and 30"]
+    },
+    {
+        "scenario": "verify error on blank email submission",
+        "firstname": "Nikhil",
+        "lastname": "Ranjan",
+        "email": "",
+        "phone": "123456789012",
+        "errors": ["must not be empty"]
+    },
+    {
+        "scenario": "verify error on invalid email format without @ symbol",
+        "firstname": "Nikhil",
+        "lastname": "Ranjan",
+        "email": "nikhil.com",
+        "phone": "123456789012",
+        "errors": ["must be a well-formed email address"]
+    },
+    {
+        "scenario": "verify error on invalid email format with missing domain",
+        "firstname": "Nikhil",
+        "lastname": "Ranjan",
+        "email": "nikhil@",
+        "phone": "123456789012",
+        "errors": ["must be a well-formed email address"]
+    },
+    {
+        "scenario": "verify error on invalid email format with missing username",
+        "firstname": "Nikhil",
+        "lastname": "Ranjan",
+        "email": "@email.com",
+        "phone": "123456789012",
+        "errors": ["must be a well-formed email address"]
+    },
+    {
+        "scenario": "verify error on blank phone submission",
+        "firstname": "Nikhil",
+        "lastname": "Ranjan",
+        "email": "Nikhil.Ranjan@email.com",
+        "phone": "",
+        "errors": ["must not be empty", "size must be between 11 and 21"]
+    },
+    {
+        "scenario": "verify error on phone below minimum length",
+        "firstname": "Nikhil",
+        "lastname": "Ranjan",
+        "email": "Nikhil.Ranjan@email.com",
+        "phone": "134567",
+        "errors": ["size must be between 11 and 21"]
+    },
+    {
+        "scenario": "verify error on phone exceeding maximum length",
+        "firstname": "Nikhil",
+        "lastname": "Ranjan",
+        "email": "Nikhil.Ranjan@email.com",
+        "phone": "1234567890123456789012",
+        "errors": ["size must be between 11 and 21"]
+    }
+]

@@ -1,0 +1,12 @@
+{
+    "roomid": 3,
+    "firstname": "Test",
+    "lastname": "User",
+    "depositpaid": true,
+    "email": "test@test.com",
+    "phone": "01234567890",
+    "bookingdates": {
+        "checkin": "2026-07-01",
+        "checkout": "2026-07-03"
+    }
+}

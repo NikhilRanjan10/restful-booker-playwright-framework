@@ -1,0 +1,9 @@
+{
+  "roomName": "301",
+  "type": "Twin",
+  "accessible": true,
+  "image": "https://www.mwtestconsultancy.co.uk/img/room1.jpg",
+  "description": "A cozy single room",
+  "features": ["TV", "WiFi"],
+  "roomPrice": 100
+}
